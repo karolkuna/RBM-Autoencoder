@@ -4,17 +4,16 @@
 #include "NeuralPredictionLibrary/FeedforwardNetwork.h"
 #include "NeuralPredictionLibrary/Backpropagation.h"
 
-class AutoEncoder {
+class MyNetwork {
 public:
     FeedforwardNetwork* network;
     Backpropagation* backprop;
     
-    AutoEncoder(int visibleUnits, int hiddenUnits, ActivationFunction* activationFunction, float learningRate, float momentumRate);
-    ~AutoEncoder();
+    MyNetwork(int visibleUnits, int hiddenUnits, int outputUnits, ActivationFunction* activationFunction, float learningRate, float momentumRate);
+    ~MyNetwork();
     
-    float Train(const MemoryBlock& input);
-    void Encode(const MemoryBlock& input, MemoryBlock& features);
-    void Decode(const MemoryBlock& features, MemoryBlock& reconstruction);
+    pair<float,int> TrainWithResult(const MemoryBlock& input, const MemoryBlock& output);
+    pair<float,int> JustResult(const MemoryBlock& input, const MemoryBlock& output);
 };
 
 #endif /* AutoEncoder_hpp */

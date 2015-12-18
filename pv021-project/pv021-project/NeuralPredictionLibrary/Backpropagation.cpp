@@ -31,7 +31,13 @@ void Backpropagation::Train(const MemoryBlock& target) {
 	}
 	
 	error = 0;
+    float best_pick_prob = m_network->output.data[0];
+    best_pick = 0;
 	for (int i = 0; i < target.size; i++) {
+        if(best_pick_prob < m_network->output.data[i]){
+            best_pick_prob = m_network->output.data[i];
+            best_pick = i;
+        }
 		error += (target.data[i] - m_network->output.data[i]) * (target.data[i] - m_network->output.data[i]);
 	}
 }

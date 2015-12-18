@@ -15,6 +15,8 @@
 		8096AD3F1C13A3110056DE7D /* MemoryBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8096AD361C13A3110056DE7D /* MemoryBlock.cpp */; };
 		8096AD401C13A3110056DE7D /* MemoryBlockView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8096AD381C13A3110056DE7D /* MemoryBlockView.cpp */; };
 		8096AD411C13A3110056DE7D /* NeuralLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8096AD3A1C13A3110056DE7D /* NeuralLayer.cpp */; };
+		A59C056E1C227DF70035BD5B /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A59C056C1C227DF70035BD5B /* Test.cpp */; settings = {ASSET_TAGS = (); }; };
+		A59C05861C248D5A0035BD5B /* TrainingInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A59C05841C248D590035BD5B /* TrainingInterface.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +51,10 @@
 		8096AD3A1C13A3110056DE7D /* NeuralLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NeuralLayer.cpp; path = NeuralPredictionLibrary/NeuralLayer.cpp; sourceTree = "<group>"; };
 		8096AD3B1C13A3110056DE7D /* NeuralLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NeuralLayer.h; path = NeuralPredictionLibrary/NeuralLayer.h; sourceTree = "<group>"; };
 		8096AD3C1C13A3110056DE7D /* NeuralNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NeuralNetwork.h; path = NeuralPredictionLibrary/NeuralNetwork.h; sourceTree = "<group>"; };
+		A59C056C1C227DF70035BD5B /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
+		A59C056D1C227DF70035BD5B /* Test.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Test.hpp; sourceTree = "<group>"; };
+		A59C05841C248D590035BD5B /* TrainingInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrainingInterface.cpp; sourceTree = "<group>"; };
+		A59C05851C248D590035BD5B /* TrainingInterface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TrainingInterface.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,10 @@
 				8096AD181C13A28D0056DE7D /* AutoEncoder.cpp */,
 				8096AD191C13A28D0056DE7D /* AutoEncoder.hpp */,
 				8096AD0F1C13A2650056DE7D /* main.cpp */,
+				A59C056C1C227DF70035BD5B /* Test.cpp */,
+				A59C056D1C227DF70035BD5B /* Test.hpp */,
+				A59C05841C248D590035BD5B /* TrainingInterface.cpp */,
+				A59C05851C248D590035BD5B /* TrainingInterface.hpp */,
 			);
 			path = "pv021-project";
 			sourceTree = "<group>";
@@ -167,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59C056E1C227DF70035BD5B /* Test.cpp in Sources */,
 				8096AD101C13A2650056DE7D /* main.cpp in Sources */,
 				8096AD401C13A3110056DE7D /* MemoryBlockView.cpp in Sources */,
 				8096AD3D1C13A3110056DE7D /* Backpropagation.cpp in Sources */,
@@ -175,6 +186,7 @@
 				8096AD1A1C13A28D0056DE7D /* RBM.cpp in Sources */,
 				8096AD3F1C13A3110056DE7D /* MemoryBlock.cpp in Sources */,
 				8096AD3E1C13A3110056DE7D /* FeedforwardNetwork.cpp in Sources */,
+				A59C05861C248D5A0035BD5B /* TrainingInterface.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +275,7 @@
 		8096AD141C13A2650056DE7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -270,6 +283,7 @@
 		8096AD151C13A2650056DE7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -293,6 +307,7 @@
 				8096AD151C13A2650056DE7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

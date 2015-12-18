@@ -1,30 +1,33 @@
 #include "AutoEncoder.hpp"
 
-AutoEncoder::AutoEncoder(int visibleUnits, int hiddenUnits, ActivationFunction* activationFunction, float learningRate, float momentumRate) {
+MyNetwork::MyNetwork(int visibleUnits, int hiddenUnits, int outputUnits, ActivationFunction* activationFunction, float learningRate, float momentumRate) {
         
-    network = new FeedforwardNetwork(visibleUnits, {hiddenUnits}, visibleUnits, activationFunction, learningRate, momentumRate);
+    network = new FeedforwardNetwork(visibleUnits, {hiddenUnits}, outputUnits, activationFunction, learningRate, momentumRate);
         backprop = new Backpropagation(network);
 }
     
-AutoEncoder::~AutoEncoder() {
+MyNetwork::~MyNetwork() {
     delete network;
     delete backprop;
 }
-    
-float AutoEncoder::Train(const MemoryBlock& input) {
+
+pair<float, int> MyNetwork::TrainWithResult(const MemoryBlock& input, const MemoryBlock& output){
     network->Propagate(input);
-    backprop->Train(input);
-    return backprop->error;
+    backprop->Train(output);
+    return make_pair(backprop->error, backprop->best_pick);
 }
-    
-void AutoEncoder::Encode(const MemoryBlock& input, MemoryBlock& features) {
-    network->layers[0]->SetActivation(input);
-    network->layers[1]->PropagateForward();
-    network->layers[1]->activation.CopyTo(features);
-}
-    
-void AutoEncoder::Decode(const MemoryBlock& features, MemoryBlock& reconstruction) {
-    network->layers[1]->SetActivation(features);
-    network->layers[2]->PropagateForward();
-    network->layers[2]->activation.CopyTo(reconstruction);
+
+pair<float, int> MyNetwork::JustResult(const MemoryBlock& input, const MemoryBlock& output){
+    network->Propagate(input);
+    float error = 0;
+    float best_pick_prob = network->output.data[0];
+    int best_pick = 0;
+    for (int i = 0; i < output.size; i++) {
+        if(best_pick_prob < network->output.data[i]){
+            best_pick_prob = network->output.data[i];
+            best_pick = i;
+        }
+        error += (output.data[i] - network->output.data[i]) * (output.data[i] - network->output.data[i]);
+    }
+    return make_pair(error, best_pick);
 }

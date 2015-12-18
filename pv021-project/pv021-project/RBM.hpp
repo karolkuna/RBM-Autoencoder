@@ -3,8 +3,9 @@
 
 #include "NeuralPredictionLibrary/MemoryBlock.h"
 #include "NeuralPredictionLibrary/ActivationFunctions.h"
+#include "TrainingInterface.hpp"
 
-class RBM {
+class RBM : public TrainingInterface{
     int visibleUnits, hiddenUnits;
     MemoryBlock visibleStates;
     MemoryBlock hiddenStates;

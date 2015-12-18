@@ -29,6 +29,7 @@ public:
 	void Train(const MemoryBlock& target);
 
 	float error;
+    float best_pick;
 };
 
 #endif /* defined(__prediction__Backpropagation__) */
