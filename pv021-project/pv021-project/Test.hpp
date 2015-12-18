@@ -14,10 +14,11 @@
 #include "RBM.hpp"
 
 class Test {
-    int repetition_m;
+    int repetition_m, hidden_neurons, neurons;
+    float momentum, learning_rate;
     void trainCharasteristicNetwork(ostream& output, TrainingInterface& network, char* data_set);
 public:
-    Test(int repetition) : repetition_m(repetition){
+    Test(int repetition, float momentum, float learning_rate, int hidden_neurons, int neurons) : repetition_m(repetition), momentum(momentum), learning_rate(learning_rate), neurons(neurons), hidden_neurons(hidden_neurons){
     }
     int test(int num_hidden_layers, ostream& output_file, ifstream& train_data_set, ifstream& train_labels, ifstream& test_data_set, ifstream& test_labels);
     void trainNormalNetwork(ostream& output_file, int examples, int repetitions, bool with_training, MyNetwork& network, char * data_set, char * labels, RBM& rbm);

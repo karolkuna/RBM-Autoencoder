@@ -60,7 +60,6 @@ void Test::trainNormalNetwork(ostream& output_file, int examples, int repetition
         for (int image = 0; image < examples; image++) {
             for(int pixel = image*IMAGE_SIZE; pixel<(image + 1) * IMAGE_SIZE; pixel++){
                 input.data[pixel-image*IMAGE_SIZE] = round(((int)((unsigned char)data_set[pixel]))/(float)255);
-                cout<<input.data[pixel-image*IMAGE_SIZE]<<endl;
             }
             
             for (int c = 0; c < CLASSES; c++) {
@@ -94,7 +93,7 @@ void Test::trainNormalNetwork(ostream& output_file, int examples, int repetition
 }
 
 int Test::test(int num_hidden_layers, ostream& output_file, ifstream& train_data_set, ifstream& train_labels, ifstream& test_data_set, ifstream& test_labels) {
-    
+    NUM_OF_INPUT = neurons;
     long long timestamp = time(0);
     
     char * data_set = (char*)malloc(CONTENT_SIZE);
@@ -111,7 +110,7 @@ int Test::test(int num_hidden_layers, ostream& output_file, ifstream& train_data
     
     output_file<<endl<<endl<<"----Traning ForwardNetwork----"<<endl;
     LogisticFunction logistic;
-    MyNetwork autoEncoder(NUM_OF_INPUT, num_hidden_layers, CLASSES, &logistic, 0.2511f, 0.0f);
+    MyNetwork autoEncoder(NUM_OF_INPUT, num_hidden_layers, CLASSES, &logistic, learning_rate, momentum);
     trainNormalNetwork(output_file, EXAMPLES, repetition_m, true, autoEncoder, data_set, labels, rbm);
     
     output_file<<endl<<endl<<"----Testing ForwardNetwork----"<<endl;
@@ -124,10 +123,7 @@ int Test::test(int num_hidden_layers, ostream& output_file, ifstream& train_data
     labels = (char*)malloc(EXAMPLES_TESTS);
     test_labels.read(labels, HEADER_LABELS); // header
     test_labels.read(labels, EXAMPLES_TESTS);
-    trainNormalNetwork(output_file, EXAMPLES_TESTS, 1, true, autoEncoder, data_set, labels, rbm);
-    
-    MemoryBlock input(IMAGE_SIZE);
-    MemoryBlock output(CLASSES);
+    trainNormalNetwork(output_file, EXAMPLES_TESTS, 1, false, autoEncoder, data_set, labels, rbm);
     
     output_file<<endl<<"Total time: "<<time(0) - timestamp<<endl;
     
