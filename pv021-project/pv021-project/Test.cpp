@@ -10,6 +10,7 @@
 #include <iostream>
 #include <fstream>
 #include <ctime>
+#include <map>
 
 int CLASSES = 10;
 int EXAMPLES = 60000;
@@ -21,6 +22,7 @@ int CONTENT_SIZE = EXAMPLES * IMAGE_SIZE;
 int CONTENT_SIZE_TEST = EXAMPLES_TESTS * IMAGE_SIZE;
 int NUM_OF_INPUT = IMAGE_SIZE/50;
 vector<int> MILESTONES = {1,10,20,40,60,80,100,150,200,250,300,400,500,700,1000,2000,5000,10000,20000,40000,60000};
+map<int, RBM*> RBMs;
 
 void Test::trainCharasteristicNetwork(ostream& output_file, TrainingInterface& network, char* data_set){
     MemoryBlock input(IMAGE_SIZE);
@@ -93,6 +95,7 @@ void Test::trainNormalNetwork(ostream& output_file, int examples, int repetition
 }
 
 int Test::test(int num_hidden_layers, ostream& output_file, ifstream& train_data_set, ifstream& train_labels, ifstream& test_data_set, ifstream& test_labels) {
+    LogisticFunction logistic;
     NUM_OF_INPUT = neurons;
     long long timestamp = time(0);
     
@@ -105,13 +108,18 @@ int Test::test(int num_hidden_layers, ostream& output_file, ifstream& train_data
     train_labels.read(labels, EXAMPLES);
     
     output_file<<"----Traning RBM----"<<endl;
-    RBM rbm(IMAGE_SIZE, NUM_OF_INPUT, 0.08f, 0.0f);
-    trainCharasteristicNetwork(output_file, rbm, data_set);
+    RBM * rbm = new RBM(IMAGE_SIZE, neurons, 0.08f, 0.0f);
+    if(RBMs.count(neurons) == 0){
+        trainCharasteristicNetwork(output_file, *rbm, data_set);
+        RBMs[neurons] = rbm;
+    }
+    else {
+        output_file<<"----RBM already trained----"<<endl;
+    }
     
     output_file<<endl<<endl<<"----Traning ForwardNetwork----"<<endl;
-    LogisticFunction logistic;
     MyNetwork autoEncoder(NUM_OF_INPUT, num_hidden_layers, CLASSES, &logistic, learning_rate, momentum);
-    trainNormalNetwork(output_file, EXAMPLES, repetition_m, true, autoEncoder, data_set, labels, rbm);
+    trainNormalNetwork(output_file, EXAMPLES, repetition_m, true, autoEncoder, data_set, labels, *RBMs[neurons]);
     
     output_file<<endl<<endl<<"----Testing ForwardNetwork----"<<endl;
     delete data_set;
@@ -123,9 +131,9 @@ int Test::test(int num_hidden_layers, ostream& output_file, ifstream& train_data
     labels = (char*)malloc(EXAMPLES_TESTS);
     test_labels.read(labels, HEADER_LABELS); // header
     test_labels.read(labels, EXAMPLES_TESTS);
-    trainNormalNetwork(output_file, EXAMPLES_TESTS, 1, false, autoEncoder, data_set, labels, rbm);
+    trainNormalNetwork(output_file, EXAMPLES_TESTS, 1, false, autoEncoder, data_set, labels, *RBMs[neurons]);
     
-    output_file<<endl<<"Total time: "<<time(0) - timestamp<<endl;
+    output_file<<"Total time: "<<time(0) - timestamp<<endl<<endl;
     
     return 0;
 }

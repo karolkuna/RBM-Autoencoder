@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8096AD101C13A2650056DE7D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8096AD0F1C13A2650056DE7D /* main.cpp */; };
 		8096AD1A1C13A28D0056DE7D /* RBM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8096AD171C13A28D0056DE7D /* RBM.cpp */; };
-		8096AD1B1C13A28D0056DE7D /* AutoEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8096AD181C13A28D0056DE7D /* AutoEncoder.cpp */; };
+		8096AD1B1C13A28D0056DE7D /* MyNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8096AD181C13A28D0056DE7D /* MyNetwork.cpp */; };
 		8096AD3D1C13A3110056DE7D /* Backpropagation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8096AD301C13A3110056DE7D /* Backpropagation.cpp */; };
 		8096AD3E1C13A3110056DE7D /* FeedforwardNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8096AD331C13A3110056DE7D /* FeedforwardNetwork.cpp */; };
 		8096AD3F1C13A3110056DE7D /* MemoryBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8096AD361C13A3110056DE7D /* MemoryBlock.cpp */; };
@@ -17,6 +17,7 @@
 		8096AD411C13A3110056DE7D /* NeuralLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8096AD3A1C13A3110056DE7D /* NeuralLayer.cpp */; };
 		A59C056E1C227DF70035BD5B /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A59C056C1C227DF70035BD5B /* Test.cpp */; settings = {ASSET_TAGS = (); }; };
 		A59C05861C248D5A0035BD5B /* TrainingInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A59C05841C248D590035BD5B /* TrainingInterface.cpp */; settings = {ASSET_TAGS = (); }; };
+		A59C05891C24C3C50035BD5B /* AutoEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A59C05871C24C3C50035BD5B /* AutoEncoder.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,8 +37,8 @@
 		8096AD0F1C13A2650056DE7D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8096AD161C13A28D0056DE7D /* RBM.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RBM.hpp; sourceTree = "<group>"; };
 		8096AD171C13A28D0056DE7D /* RBM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RBM.cpp; sourceTree = "<group>"; };
-		8096AD181C13A28D0056DE7D /* AutoEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoEncoder.cpp; sourceTree = "<group>"; };
-		8096AD191C13A28D0056DE7D /* AutoEncoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AutoEncoder.hpp; sourceTree = "<group>"; };
+		8096AD181C13A28D0056DE7D /* MyNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyNetwork.cpp; sourceTree = "<group>"; };
+		8096AD191C13A28D0056DE7D /* MyNetwork.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyNetwork.hpp; sourceTree = "<group>"; };
 		8096AD301C13A3110056DE7D /* Backpropagation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Backpropagation.cpp; path = NeuralPredictionLibrary/Backpropagation.cpp; sourceTree = "<group>"; };
 		8096AD311C13A3110056DE7D /* ActivationFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivationFunctions.h; path = NeuralPredictionLibrary/ActivationFunctions.h; sourceTree = "<group>"; };
 		8096AD321C13A3110056DE7D /* Backpropagation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Backpropagation.h; path = NeuralPredictionLibrary/Backpropagation.h; sourceTree = "<group>"; };
@@ -55,6 +56,8 @@
 		A59C056D1C227DF70035BD5B /* Test.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Test.hpp; sourceTree = "<group>"; };
 		A59C05841C248D590035BD5B /* TrainingInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrainingInterface.cpp; sourceTree = "<group>"; };
 		A59C05851C248D590035BD5B /* TrainingInterface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TrainingInterface.hpp; sourceTree = "<group>"; };
+		A59C05871C24C3C50035BD5B /* AutoEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoEncoder.cpp; sourceTree = "<group>"; };
+		A59C05881C24C3C50035BD5B /* AutoEncoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AutoEncoder.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,13 +93,15 @@
 				8096AD2F1C13A2E00056DE7D /* NeuralPredictionLibrary */,
 				8096AD161C13A28D0056DE7D /* RBM.hpp */,
 				8096AD171C13A28D0056DE7D /* RBM.cpp */,
-				8096AD181C13A28D0056DE7D /* AutoEncoder.cpp */,
-				8096AD191C13A28D0056DE7D /* AutoEncoder.hpp */,
+				8096AD181C13A28D0056DE7D /* MyNetwork.cpp */,
+				8096AD191C13A28D0056DE7D /* MyNetwork.hpp */,
 				8096AD0F1C13A2650056DE7D /* main.cpp */,
 				A59C056C1C227DF70035BD5B /* Test.cpp */,
 				A59C056D1C227DF70035BD5B /* Test.hpp */,
 				A59C05841C248D590035BD5B /* TrainingInterface.cpp */,
 				A59C05851C248D590035BD5B /* TrainingInterface.hpp */,
+				A59C05871C24C3C50035BD5B /* AutoEncoder.cpp */,
+				A59C05881C24C3C50035BD5B /* AutoEncoder.hpp */,
 			);
 			path = "pv021-project";
 			sourceTree = "<group>";
@@ -178,10 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A59C056E1C227DF70035BD5B /* Test.cpp in Sources */,
+				A59C05891C24C3C50035BD5B /* AutoEncoder.cpp in Sources */,
 				8096AD101C13A2650056DE7D /* main.cpp in Sources */,
 				8096AD401C13A3110056DE7D /* MemoryBlockView.cpp in Sources */,
 				8096AD3D1C13A3110056DE7D /* Backpropagation.cpp in Sources */,
-				8096AD1B1C13A28D0056DE7D /* AutoEncoder.cpp in Sources */,
+				8096AD1B1C13A28D0056DE7D /* MyNetwork.cpp in Sources */,
 				8096AD411C13A3110056DE7D /* NeuralLayer.cpp in Sources */,
 				8096AD1A1C13A28D0056DE7D /* RBM.cpp in Sources */,
 				8096AD3F1C13A3110056DE7D /* MemoryBlock.cpp in Sources */,

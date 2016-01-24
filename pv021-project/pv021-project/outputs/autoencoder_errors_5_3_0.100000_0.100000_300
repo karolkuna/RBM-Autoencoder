@@ -1,0 +1,172 @@
+----Traning RBM----
+----RBM already trained----
+
+
+----Traning ForwardNetwork----
+Celkovy priemerny squared error po 1 kolach: 2.72353 , priemerny squared error od 0 kola: 2.72353
+Celkovy miss rate po 1 kolach: 1 , priemerny squared error od 0 kola: 1
+Celkovy priemerny squared error po 10 kolach: 2.41463 , priemerny squared error od 0 kola: 2.41463
+Celkovy miss rate po 10 kolach: 0.9 , priemerny squared error od 0 kola: 0.9
+Celkovy priemerny squared error po 20 kolach: 2.22282 , priemerny squared error od 0 kola: 2.22282
+Celkovy miss rate po 20 kolach: 0.9 , priemerny squared error od 0 kola: 0.9
+Celkovy priemerny squared error po 40 kolach: 1.91733 , priemerny squared error od 0 kola: 1.91733
+Celkovy miss rate po 40 kolach: 0.925 , priemerny squared error od 0 kola: 0.925
+Celkovy priemerny squared error po 60 kolach: 1.69973 , priemerny squared error od 0 kola: 1.69973
+Celkovy miss rate po 60 kolach: 0.933333 , priemerny squared error od 0 kola: 0.933333
+Celkovy priemerny squared error po 80 kolach: 1.54906 , priemerny squared error od 0 kola: 1.54906
+Celkovy miss rate po 80 kolach: 0.9375 , priemerny squared error od 0 kola: 0.9375
+Celkovy priemerny squared error po 100 kolach: 1.44498 , priemerny squared error od 0 kola: 1.44498
+Celkovy miss rate po 100 kolach: 0.94 , priemerny squared error od 0 kola: 0.94
+Celkovy priemerny squared error po 150 kolach: 1.28303 , priemerny squared error od 0 kola: 1.28303
+Celkovy miss rate po 150 kolach: 0.913333 , priemerny squared error od 0 kola: 0.913333
+Celkovy priemerny squared error po 200 kolach: 1.1946 , priemerny squared error od 0 kola: 1.1946
+Celkovy miss rate po 200 kolach: 0.915 , priemerny squared error od 0 kola: 0.915
+Celkovy priemerny squared error po 250 kolach: 1.13815 , priemerny squared error od 0 kola: 1.13815
+Celkovy miss rate po 250 kolach: 0.904 , priemerny squared error od 0 kola: 0.904
+Celkovy priemerny squared error po 300 kolach: 1.09984 , priemerny squared error od 0 kola: 1.09984
+Celkovy miss rate po 300 kolach: 0.903333 , priemerny squared error od 0 kola: 0.903333
+Celkovy priemerny squared error po 400 kolach: 1.05002 , priemerny squared error od 0 kola: 1.05002
+Celkovy miss rate po 400 kolach: 0.8875 , priemerny squared error od 0 kola: 0.8875
+Celkovy priemerny squared error po 500 kolach: 1.02019 , priemerny squared error od 0 kola: 1.02019
+Celkovy miss rate po 500 kolach: 0.88 , priemerny squared error od 0 kola: 0.88
+Celkovy priemerny squared error po 700 kolach: 0.985462 , priemerny squared error od 0 kola: 0.985462
+Celkovy miss rate po 700 kolach: 0.87 , priemerny squared error od 0 kola: 0.87
+Celkovy priemerny squared error po 1000 kolach: 0.959025 , priemerny squared error od 0 kola: 0.959025
+Celkovy miss rate po 1000 kolach: 0.857 , priemerny squared error od 0 kola: 0.857
+Celkovy priemerny squared error po 2000 kolach: 0.924085 , priemerny squared error od 0 kola: 0.924085
+Celkovy miss rate po 2000 kolach: 0.8325 , priemerny squared error od 0 kola: 0.8325
+Celkovy priemerny squared error po 5000 kolach: 0.845338 , priemerny squared error od 0 kola: 0.845338
+Celkovy miss rate po 5000 kolach: 0.7354 , priemerny squared error od 0 kola: 0.7354
+Celkovy priemerny squared error po 10000 kolach: 0.728405 , priemerny squared error od 0 kola: 0.728405
+Celkovy miss rate po 10000 kolach: 0.6084 , priemerny squared error od 0 kola: 0.6084
+Celkovy priemerny squared error po 20000 kolach: 0.596074 , priemerny squared error od 0 kola: 0.596074
+Celkovy miss rate po 20000 kolach: 0.463 , priemerny squared error od 0 kola: 0.463
+Celkovy priemerny squared error po 40000 kolach: 0.455328 , priemerny squared error od 0 kola: 0.455328
+Celkovy miss rate po 40000 kolach: 0.323225 , priemerny squared error od 0 kola: 0.323225
+Celkovy priemerny squared error po 60000 kolach: 0.373606 , priemerny squared error od 0 kola: 0.373606
+Celkovy miss rate po 60000 kolach: 0.2512 , priemerny squared error od 0 kola: 0.2512
+Celkovy priemerny squared error po 60001 kolach: 0.373609 , priemerny squared error od 60000 kola: 0.559439
+Celkovy miss rate po 60001 kolach: 0.251212 , priemerny squared error od 60000 kola: 1
+Celkovy priemerny squared error po 60010 kolach: 0.373559 , priemerny squared error od 60000 kola: 0.0942535
+Celkovy miss rate po 60010 kolach: 0.251175 , priemerny squared error od 60000 kola: 0.1
+Celkovy priemerny squared error po 60020 kolach: 0.373505 , priemerny squared error od 60000 kola: 0.0706807
+Celkovy miss rate po 60020 kolach: 0.251133 , priemerny squared error od 60000 kola: 0.05
+Celkovy priemerny squared error po 60040 kolach: 0.373478 , priemerny squared error od 60000 kola: 0.182498
+Celkovy miss rate po 60040 kolach: 0.251116 , priemerny squared error od 60000 kola: 0.125
+Celkovy priemerny squared error po 60060 kolach: 0.373393 , priemerny squared error od 60000 kola: 0.160513
+Celkovy miss rate po 60060 kolach: 0.251049 , priemerny squared error od 60000 kola: 0.1
+Celkovy priemerny squared error po 60080 kolach: 0.373306 , priemerny squared error od 60000 kola: 0.148701
+Celkovy miss rate po 60080 kolach: 0.250965 , priemerny squared error od 60000 kola: 0.075
+Celkovy priemerny squared error po 60100 kolach: 0.373229 , priemerny squared error od 60000 kola: 0.147197
+Celkovy miss rate po 60100 kolach: 0.250915 , priemerny squared error od 60000 kola: 0.08
+Celkovy priemerny squared error po 60150 kolach: 0.373093 , priemerny squared error od 60000 kola: 0.167784
+Celkovy miss rate po 60150 kolach: 0.250823 , priemerny squared error od 60000 kola: 0.1
+Celkovy priemerny squared error po 60200 kolach: 0.372941 , priemerny squared error od 60000 kola: 0.173648
+Celkovy miss rate po 60200 kolach: 0.250714 , priemerny squared error od 60000 kola: 0.105
+Celkovy priemerny squared error po 60250 kolach: 0.372745 , priemerny squared error od 60000 kola: 0.166171
+Celkovy miss rate po 60250 kolach: 0.250556 , priemerny squared error od 60000 kola: 0.096
+Celkovy priemerny squared error po 60300 kolach: 0.372583 , priemerny squared error od 60000 kola: 0.168098
+Celkovy miss rate po 60300 kolach: 0.250431 , priemerny squared error od 60000 kola: 0.0966667
+Celkovy priemerny squared error po 60400 kolach: 0.372273 , priemerny squared error od 60000 kola: 0.17228
+Celkovy miss rate po 60400 kolach: 0.250215 , priemerny squared error od 60000 kola: 0.1025
+Celkovy priemerny squared error po 60500 kolach: 0.37195 , priemerny squared error od 60000 kola: 0.173254
+Celkovy miss rate po 60500 kolach: 0.24995 , priemerny squared error od 60000 kola: 0.1
+Celkovy priemerny squared error po 60700 kolach: 0.371487 , priemerny squared error od 60000 kola: 0.189847
+Celkovy miss rate po 60700 kolach: 0.249572 , priemerny squared error od 60000 kola: 0.11
+Celkovy priemerny squared error po 61000 kolach: 0.370698 , priemerny squared error od 60000 kola: 0.196218
+Celkovy miss rate po 61000 kolach: 0.248967 , priemerny squared error od 60000 kola: 0.115
+Celkovy priemerny squared error po 62000 kolach: 0.367933 , priemerny squared error od 60000 kola: 0.197748
+Celkovy miss rate po 62000 kolach: 0.246742 , priemerny squared error od 60000 kola: 0.113
+Celkovy priemerny squared error po 65000 kolach: 0.358774 , priemerny squared error od 60000 kola: 0.180785
+Celkovy miss rate po 65000 kolach: 0.239523 , priemerny squared error od 60000 kola: 0.0994
+Celkovy priemerny squared error po 70000 kolach: 0.346057 , priemerny squared error od 60000 kola: 0.180769
+Celkovy miss rate po 70000 kolach: 0.2297 , priemerny squared error od 60000 kola: 0.1007
+Celkovy priemerny squared error po 80000 kolach: 0.325334 , priemerny squared error od 60000 kola: 0.180519
+Celkovy miss rate po 80000 kolach: 0.214162 , priemerny squared error od 60000 kola: 0.10305
+Celkovy priemerny squared error po 100000 kolach: 0.293228 , priemerny squared error od 60000 kola: 0.172662
+Celkovy miss rate po 100000 kolach: 0.1904 , priemerny squared error od 60000 kola: 0.0992
+Celkovy priemerny squared error po 120000 kolach: 0.269253 , priemerny squared error od 60000 kola: 0.164898
+Celkovy miss rate po 120000 kolach: 0.173517 , priemerny squared error od 60000 kola: 0.0958333
+Celkovy priemerny squared error po 120001 kolach: 0.269258 , priemerny squared error od 120000 kola: 0.879723
+Celkovy miss rate po 120001 kolach: 0.173524 , priemerny squared error od 120000 kola: 1
+Celkovy priemerny squared error po 120010 kolach: 0.269241 , priemerny squared error od 120000 kola: 0.12969
+Celkovy miss rate po 120010 kolach: 0.173511 , priemerny squared error od 120000 kola: 0.1
+Celkovy priemerny squared error po 120020 kolach: 0.26922 , priemerny squared error od 120000 kola: 0.0725815
+Celkovy miss rate po 120020 kolach: 0.173496 , priemerny squared error od 120000 kola: 0.05
+Celkovy priemerny squared error po 120040 kolach: 0.269224 , priemerny squared error od 120000 kola: 0.183496
+Celkovy miss rate po 120040 kolach: 0.1735 , priemerny squared error od 120000 kola: 0.125
+Celkovy priemerny squared error po 120060 kolach: 0.269197 , priemerny squared error od 120000 kola: 0.158893
+Celkovy miss rate po 120060 kolach: 0.17348 , priemerny squared error od 120000 kola: 0.1
+Celkovy priemerny squared error po 120080 kolach: 0.269164 , priemerny squared error od 120000 kola: 0.13607
+Celkovy miss rate po 120080 kolach: 0.173451 , priemerny squared error od 120000 kola: 0.075
+Celkovy priemerny squared error po 120100 kolach: 0.269136 , priemerny squared error od 120000 kola: 0.129428
+Celkovy miss rate po 120100 kolach: 0.17343 , priemerny squared error od 120000 kola: 0.07
+Celkovy priemerny squared error po 120150 kolach: 0.269096 , priemerny squared error od 120000 kola: 0.143941
+Celkovy miss rate po 120150 kolach: 0.173408 , priemerny squared error od 120000 kola: 0.0866667
+Celkovy priemerny squared error po 120200 kolach: 0.269053 , priemerny squared error od 120000 kola: 0.149076
+Celkovy miss rate po 120200 kolach: 0.173378 , priemerny squared error od 120000 kola: 0.09
+Celkovy priemerny squared error po 120250 kolach: 0.268987 , priemerny squared error od 120000 kola: 0.141482
+Celkovy miss rate po 120250 kolach: 0.173331 , priemerny squared error od 120000 kola: 0.084
+Celkovy priemerny squared error po 120300 kolach: 0.26893 , priemerny squared error od 120000 kola: 0.140009
+Celkovy miss rate po 120300 kolach: 0.173292 , priemerny squared error od 120000 kola: 0.0833333
+Celkovy priemerny squared error po 120400 kolach: 0.268836 , priemerny squared error od 120000 kola: 0.143794
+Celkovy miss rate po 120400 kolach: 0.173231 , priemerny squared error od 120000 kola: 0.0875
+Celkovy priemerny squared error po 120500 kolach: 0.268739 , priemerny squared error od 120000 kola: 0.14541
+Celkovy miss rate po 120500 kolach: 0.173145 , priemerny squared error od 120000 kola: 0.084
+Celkovy priemerny squared error po 120700 kolach: 0.268607 , priemerny squared error od 120000 kola: 0.158013
+Celkovy miss rate po 120700 kolach: 0.173065 , priemerny squared error od 120000 kola: 0.0957143
+Celkovy priemerny squared error po 121000 kolach: 0.268394 , priemerny squared error od 120000 kola: 0.165384
+Celkovy miss rate po 121000 kolach: 0.172917 , priemerny squared error od 120000 kola: 0.101
+Celkovy priemerny squared error po 122000 kolach: 0.267565 , priemerny squared error od 120000 kola: 0.166293
+Celkovy miss rate po 122000 kolach: 0.172279 , priemerny squared error od 120000 kola: 0.098
+Celkovy priemerny squared error po 125000 kolach: 0.264478 , priemerny squared error od 120000 kola: 0.149869
+Celkovy miss rate po 125000 kolach: 0.170176 , priemerny squared error od 120000 kola: 0.09
+Celkovy priemerny squared error po 130000 kolach: 0.260256 , priemerny squared error od 120000 kola: 0.152257
+Celkovy miss rate po 130000 kolach: 0.167231 , priemerny squared error od 120000 kola: 0.0918
+Celkovy priemerny squared error po 140000 kolach: 0.252838 , priemerny squared error od 120000 kola: 0.154324
+Celkovy miss rate po 140000 kolach: 0.162114 , priemerny squared error od 120000 kola: 0.0937
+Celkovy priemerny squared error po 160000 kolach: 0.239719 , priemerny squared error od 120000 kola: 0.151073
+Celkovy miss rate po 160000 kolach: 0.153062 , priemerny squared error od 120000 kola: 0.0917
+Celkovy priemerny squared error po 180000 kolach: 0.22853 , priemerny squared error od 120000 kola: 0.147017
+Celkovy miss rate po 180000 kolach: 0.145517 , priemerny squared error od 120000 kola: 0.0895167
+
+
+----Testing ForwardNetwork----
+Celkovy priemerny squared error po 1 kolach: 0.00405954 , priemerny squared error od 0 kola: 0.00405954
+Celkovy miss rate po 1 kolach: 0 , priemerny squared error od 0 kola: 0
+Celkovy priemerny squared error po 10 kolach: 0.0746903 , priemerny squared error od 0 kola: 0.0746903
+Celkovy miss rate po 10 kolach: 0 , priemerny squared error od 0 kola: 0
+Celkovy priemerny squared error po 20 kolach: 0.0612596 , priemerny squared error od 0 kola: 0.0612596
+Celkovy miss rate po 20 kolach: 0 , priemerny squared error od 0 kola: 0
+Celkovy priemerny squared error po 40 kolach: 0.0705847 , priemerny squared error od 0 kola: 0.0705847
+Celkovy miss rate po 40 kolach: 0.025 , priemerny squared error od 0 kola: 0.025
+Celkovy priemerny squared error po 60 kolach: 0.0577105 , priemerny squared error od 0 kola: 0.0577105
+Celkovy miss rate po 60 kolach: 0.0166667 , priemerny squared error od 0 kola: 0.0166667
+Celkovy priemerny squared error po 80 kolach: 0.0716665 , priemerny squared error od 0 kola: 0.0716665
+Celkovy miss rate po 80 kolach: 0.025 , priemerny squared error od 0 kola: 0.025
+Celkovy priemerny squared error po 100 kolach: 0.097533 , priemerny squared error od 0 kola: 0.097533
+Celkovy miss rate po 100 kolach: 0.04 , priemerny squared error od 0 kola: 0.04
+Celkovy priemerny squared error po 150 kolach: 0.130648 , priemerny squared error od 0 kola: 0.130648
+Celkovy miss rate po 150 kolach: 0.0733333 , priemerny squared error od 0 kola: 0.0733333
+Celkovy priemerny squared error po 200 kolach: 0.125663 , priemerny squared error od 0 kola: 0.125663
+Celkovy miss rate po 200 kolach: 0.075 , priemerny squared error od 0 kola: 0.075
+Celkovy priemerny squared error po 250 kolach: 0.136865 , priemerny squared error od 0 kola: 0.136865
+Celkovy miss rate po 250 kolach: 0.084 , priemerny squared error od 0 kola: 0.084
+Celkovy priemerny squared error po 300 kolach: 0.146297 , priemerny squared error od 0 kola: 0.146297
+Celkovy miss rate po 300 kolach: 0.0933333 , priemerny squared error od 0 kola: 0.0933333
+Celkovy priemerny squared error po 400 kolach: 0.169987 , priemerny squared error od 0 kola: 0.169987
+Celkovy miss rate po 400 kolach: 0.11 , priemerny squared error od 0 kola: 0.11
+Celkovy priemerny squared error po 500 kolach: 0.178338 , priemerny squared error od 0 kola: 0.178338
+Celkovy miss rate po 500 kolach: 0.11 , priemerny squared error od 0 kola: 0.11
+Celkovy priemerny squared error po 700 kolach: 0.186265 , priemerny squared error od 0 kola: 0.186265
+Celkovy miss rate po 700 kolach: 0.12 , priemerny squared error od 0 kola: 0.12
+Celkovy priemerny squared error po 1000 kolach: 0.182912 , priemerny squared error od 0 kola: 0.182912
+Celkovy miss rate po 1000 kolach: 0.122 , priemerny squared error od 0 kola: 0.122
+Celkovy priemerny squared error po 2000 kolach: 0.189483 , priemerny squared error od 0 kola: 0.189483
+Celkovy miss rate po 2000 kolach: 0.1235 , priemerny squared error od 0 kola: 0.1235
+Celkovy priemerny squared error po 5000 kolach: 0.188532 , priemerny squared error od 0 kola: 0.188532
+Celkovy miss rate po 5000 kolach: 0.1226 , priemerny squared error od 0 kola: 0.1226
+Celkovy priemerny squared error po 10000 kolach: 0.147374 , priemerny squared error od 0 kola: 0.147374
+Celkovy miss rate po 10000 kolach: 0.0916 , priemerny squared error od 0 kola: 0.0916
+Total time: 179
+
